@@ -6,7 +6,17 @@ y1 = np.sin(x)
 y2 = np.cos(x)
 
 # Part1
+"""
 fig = plt.figure(figsize=(10, 8))
 plt.plot(x, y1)
 plt.plot(x, y2)
+plt.show()
+"""
+
+# Part2
+fig = plt.figure(figsize=(10, 8))
+plt.plot(x, y1)
+plt.plot(x, y2)
+plt.xlabel("X")
+plt.ylabel("F(X)")
 plt.show()
