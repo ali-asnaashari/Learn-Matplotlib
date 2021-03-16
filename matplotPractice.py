@@ -21,6 +21,7 @@ plt.show()
 """
 
 # Part3
+"""
 x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 y = [2, 1, 6, 5, 6, 8, 2, 5, 4, 4]
 # create window
@@ -33,23 +34,18 @@ plt.xlabel("x", fontsize=14)
 # ylabel --> latex form
 plt.ylabel("$y = x^2$", fontsize=14)
 plt.show()
+"""
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Part4
+x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+y = [2, 1, 6, 5, 6, 8, 2, 5, 4, 4]
+# create window
+plt.figure(figsize=(10, 8))
+plt.plot(x, y, linewidth=4, color="blue", linestyle="--")
+# title
+plt.title("my first plot \n Ali asnaashari", fontsize=13)
+# xlabel
+plt.xlabel("x", fontsize=14)
+# ylabel --> latex form
+plt.ylabel("$y = x^2$", fontsize=14)
+plt.show()
