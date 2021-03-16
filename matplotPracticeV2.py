@@ -51,9 +51,23 @@ plt.show()
 '''
 
 # Part5
+'''
 fig = plt.figure(figsize=(10, 8))
 plt.plot(x, y1, label="sin(x)")
 plt.plot(x, y2, label="cos(x)")
+plt.xlabel("X")
+plt.ylabel("F(X)")
+plt.xticks(np.arange(0, 2 * np.pi + 0.01, np.pi / 4),
+           ['0', '$\pi/4$', '$\pi/2$', '$3\pi4/$', '$\pi$', '$5\pi/4$', '$3\pi/2$', '$7\pi/4$', '$2\pi$'])
+plt.yticks([-1, -0.5, 0, 0.5, 1])
+plt.legend(fontsize=14)
+plt.show()
+'''
+
+# complete
+fig = plt.figure(figsize=(10, 8))
+plt.plot(x, y1, label="sin(x)", color="b", linestyle=":")
+plt.plot(x, y2, label="cos(x)", color="r", linestyle="--")
 plt.xlabel("X")
 plt.ylabel("F(X)")
 plt.xticks(np.arange(0, 2 * np.pi + 0.01, np.pi / 4),
